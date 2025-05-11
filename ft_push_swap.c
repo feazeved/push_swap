@@ -6,11 +6,12 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 23:53:22 by feazeved          #+#    #+#             */
-/*   Updated: 2025/05/12 00:16:29 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/05/12 00:19:22 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_checker(char **argv, int argc)
 {
-	return (0);
+	int	i = 1;
+	return (i);
 }
