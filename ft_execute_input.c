@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 20:22:09 by feazeved          #+#    #+#             */
-/*   Updated: 2025/06/01 20:29:05 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/06/01 20:46:29 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,3 @@ void	ft_execute_input2(char *line, t_stack *a, t_stack *b)
 		ft_reversation(b);
 	}
 }
-

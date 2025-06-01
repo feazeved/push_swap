@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 21:05:22 by feazeved          #+#    #+#             */
-/*   Updated: 2025/06/01 20:31:23 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/06/01 20:46:09 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,8 @@ void		ft_rotation(t_stack *stack);
 void		ft_reversation(t_stack *stack);
 void		ft_swappation(t_stack *stack);
 void		ft_pushaition(t_stack *from, t_stack *to);
-void	ft_execute_input2(char *line, t_stack *a, t_stack *b);
-void	ft_execute_input(char *line, t_stack *a, t_stack *b);
-int	ft_strcmp(char *s1, char *s2);
+void		ft_execute_input2(char *line, t_stack *a, t_stack *b);
+void		ft_execute_input(char *line, t_stack *a, t_stack *b);
+int			ft_strcmp(char *s1, char *s2);
 
 #endif
