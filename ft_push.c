@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 03:44:50 by feazeved          #+#    #+#             */
-/*   Updated: 2025/05/25 23:16:17 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/06/17 17:29:09 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_pushaition(t_stack *from, t_stack *to)
 {
 	t_node	*node;
 
+	if (!from->top)
+		return ;
 	node = from->top;
 	from->top = node->next;
 	if (from->top)
