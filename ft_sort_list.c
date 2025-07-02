@@ -6,12 +6,11 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 20:42:55 by feazeved          #+#    #+#             */
-/*   Updated: 2025/07/02 20:52:25 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/07/02 23:45:29 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 int	ft_abs(int cost)
 {
@@ -29,8 +28,8 @@ t_node	*ft_find_cheapest(t_stack *b, int *check)
 	current = b->top;
 	while (current)
 	{
-		if (!cheapest || (abs(cheapest->cost_a) + abs(cheapest->cost_b)
-				> (abs(current->cost_a) + abs(current->cost_b))))
+		if (!cheapest || (ft_abs(cheapest->cost_a) + ft_abs(cheapest->cost_b)
+				> (ft_abs(current->cost_a) + ft_abs(current->cost_b))))
 			cheapest = current;
 		current = current->next;
 	}
