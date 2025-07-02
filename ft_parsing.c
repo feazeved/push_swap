@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 00:59:40 by feazeved          #+#    #+#             */
-/*   Updated: 2025/06/09 20:30:50 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/07/02 20:58:48 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	ft_parsing(int argc, char *argv[], t_stack *a, t_stack *b)
 	{
 		i = 0;
 		list = ft_split(argv[1], ' ');
+		if (!list)
+			
 		while (list[i])
 			ft_putnode(ft_strtol(list[i++]), a, b, list);
 		ft_free_array(list);

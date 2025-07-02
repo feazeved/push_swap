@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 20:42:55 by feazeved          #+#    #+#             */
-/*   Updated: 2025/06/05 20:33:29 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/07/02 20:52:25 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,8 +107,6 @@ void	ft_sort_list(t_stack *a, t_stack *b)
 			break ;
 		ft_set_nodes(a, b);
 		to_sort = ft_find_cheapest(b, &check);
-		if (a->size == 250 && b->size == 250)
-			printf("WE ARE IN THE FUCKING MIDDLE\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		while (check == 1 && to_sort->cost_a && to_sort->cost_b)
 		{
 			ft_rotate(a, b);

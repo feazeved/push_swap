@@ -6,7 +6,7 @@
 #    By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/19 23:18:00 by feazeved          #+#    #+#              #
-#    Updated: 2025/06/09 23:40:09 by feazeved         ###   ########.fr        #
+#    Updated: 2025/07/02 20:27:06 by feazeved         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,8 @@ NAME = push_swap
 NAME_BONUS = checker
 
 CC = cc
+
+RM = rm -rf
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -29,11 +31,10 @@ OBJS = $(SRC:.c=.o)
 
 BOBJS = $(SRC_BONUS:.c=.o)
 
+all: $(NAME)
+
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-
-
-all: $(NAME)
 
 bonus: .bonus
 
@@ -42,12 +43,12 @@ bonus: .bonus
 	touch .bonus
 
 clean:
-	rm -f $(OBJS) $(BOBJS)
-	rm -f .bonus
+	$(RM) $(OBJS) $(BOBJS)
+	$(RM) .bonus
 
 fclean: clean
-	rm -f $(NAME)
-	rm -f $(NAME_BONUS)
+	$(RM) push_swap
+	$(RM) $(NAME_BONUS)
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c $< -o $@
